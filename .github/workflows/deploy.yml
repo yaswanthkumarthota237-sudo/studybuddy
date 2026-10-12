@@ -17,7 +17,7 @@ jobs:
           flutter create build_app --platforms web
           curl -L https://gist.githubusercontent.com/yaswanthkumarthota237-sudo/cdd1e556a92df6bd2df6b8668de9e509/raw/main.dart -o build_app/lib/main.dart
           cd build_app
-          flutter pub add http shared_preferences
+                    flutter pub add http shared_preferences file_picker:^8.0.0 syncfusion_flutter_pdf
           flutter build web --release --base-href /studybuddy/
       - uses: peaceiris/actions-gh-pages@v4
         with:
